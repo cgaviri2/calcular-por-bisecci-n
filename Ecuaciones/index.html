@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="style.css">
+<title>Calculadora de Polinomios</title>
+</head>
+<body>
+    <h1>Calculadora de Polinomios</h1>
+    <p>Ingrese los coeficientes del polinomio:</p>
+    <label for="coefA">a (x^3):</label>
+    <input type="text" id="coefA" value="1">
+    
+    
+    <label for="coefB">b (x^2):</label>
+    <input type="text" id="coefB" value="0">
+    
+    
+    <label for="coefC">c (x):</label>
+    <input type="text" id="coefC" value="0">
+    
+    
+    <label for="coefD">d (constante):</label>
+    <input type="text" id="coefD" value="0">
+    
+    
+    <p>Ingrese el rango para la búsqueda de raíces:</p>
+    <label for="xMin">Límite inferior:</label>
+    <input type="text" id="xMin" value="-10">
+    
+    
+    <label for="xMax">Límite superior:</label>
+    <input type="text" id="xMax" value="10">
+    
+    
+
+    <button onclick="calcularRaices()">Buscar Raices</button>
+    <button onclick="calcularMaxMin()">Buscar Máximo/Minimo</button>
+
+    <h2>Resultados:</h2>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
