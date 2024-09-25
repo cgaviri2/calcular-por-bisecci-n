@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="style.css">
+<title>calculadora de raíces por bisección </title>
+</head>
+ <div id="contenedor-principal">
+    <h1>calculadora de raíces por bisección </h1>
+    <p>Ingrese los coeficientes del polinomio:</p>
+    <label for="coefA">a (x^3):</label>
+    <input type="text" id="coefA" value="">
+    
+    
+    <label for="coefB">b (x^2):</label>
+    <input type="text" id="coefB" value="" >
+    
+    
+    <label for="coefC">c (x):</label>
+    <input type="text" id="coefC" value="" >
+    
+    
+    <label for="coefD">d (constante):</label>
+    <input type="text" id="coefD" value="">
+    
+    
+    <p>Ingrese el rango para la búsqueda de raíces:</p>
+ <div class="global">
+    <div class="b1">
+        <label for="xMin">Límite inferior:</label>
+        <label for="xMax">Límite superior:</label>
+    </div> 
+    
+    <div class="b1">
+   
+    <input type="text" id="xMin" value="-10" >
+    
+    
+    
+    <input type="text" id="xMax" value="10">
+</div>     
+<div class="botones">
+    <button onclick="calcularRaices()">Buscar Raices</button>
+    <button onclick="calcularMaxMin()">Buscar Máximo/Minimo</button>
+</div>
+    
+</div>
+    <h2>Resultados:</h2>
+    <div id="resultado"></div>
+ 
+
+    <script src="script.js"></script>
+</div>
+</html>

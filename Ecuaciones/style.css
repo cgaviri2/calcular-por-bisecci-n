@@ -1,0 +1,87 @@
+/* para poder insertar la imagen de fondo  */
+body {
+    background-image: url('https://img.freepik.com/vector-premium/vector-abstracto-elegante-fondo-verde-negro_132724-976.jpg?w=996');
+    background-size: cover;
+    background-position: center;
+        
+   }
+/* aqui va la configuracion para poder centrar todo cuadros y textos */
+#contenedor-principal {
+    width: 80%; /* ancho del contenedor */ margin: 0 auto; /* centrar horizontalmente */ text-align: center; /* centrar texto */ }
+    
+h1 {
+	color: #fcfbfb;
+	text-align: center;
+}
+
+p {
+    
+	font-size: 18px;
+	color: #6af50d;
+}
+
+label {
+    
+	font-size: 16px;
+	color: #f8fafc;
+	margin-bottom: 10px;
+	display: block;
+}
+
+input[type="text"] {
+    width: 20%; /* ancho de la caja de texto */
+    padding: 10px; /* espacio entre el texto y el borde */
+    margin-bottom: 20px; /* espacio entre las cajas de texto */
+    border: none; /* borde de la caja de texto */
+    border-radius: 5px; /* bordes redondeados */
+    font-size: 16px; /* tamaño de letra */
+    font-family: Arial, sans-serif; /* tipo de letra */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra debajo de la caja de texto */
+}
+
+input[type="text"]:focus {
+    border-color: #aaa; /* color del borde cuando se enfoca */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* sombra debajo de la caja de texto cuando se enfoca */
+}
+
+
+/* esta es la configuracion de los botones, se puede configurar su tamano y estilo o colores  */
+button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+br {
+	clear: both;
+}
+.global {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+.global .b1 {
+    display: flex;
+gap: 5px;
+justify-content: center;
+
+align-items: center;
+}
